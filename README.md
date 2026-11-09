@@ -15,7 +15,7 @@ The project uses historical rainfall data from India (1901–2015).
 
 ## Project Files
 - rainfall in india 1901-2015.csv
-- rainfall_prediction (1).ipynb
+- rainfall_prediction10.ipynb
 
 ## How to Run
 1. Download the repository.
