@@ -95,6 +95,31 @@ preprocessor = ColumnTransformer(
     remainder='passthrough'
 )
 
+# 8. CREATE LINEAR REGRESSION MODEL
+
+model = Pipeline([
+    ('preprocessing', preprocessor),
+    ('regression', LinearRegression())
+])
+
+
+# 9. TRAINING FUNCTION
+
+def train_model():
+    model.fit(X_train, y_train)
+    print("\nModel training completed successfully!")
+
+
+# 10. TESTING FUNCTION
+
+def test_model():
+    predictions = model.predict(X_test)
+    return predictions
+
+
+# 11. TRAIN THE MODEL
+
+train_model()
 
 
 
