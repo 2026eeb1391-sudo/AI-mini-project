@@ -38,4 +38,21 @@ print("\nMissing values:")
 print(df.isnull().sum())
 
 
+data = df[['SUBDIVISION', 'YEAR', 'ANNUAL']].copy()
+
+data = data.dropna(subset=['ANNUAL'])
+
+data = data.dropna(subset=['SUBDIVISION', 'YEAR'])
+
+data['YEAR'] = data['YEAR'].astype(int)
+
+print("\nCleaned dataset:")
+print(data.head())
+
+print("\nRemaining missing values:")
+print(data.isnull().sum())
+
+
+
+
 
