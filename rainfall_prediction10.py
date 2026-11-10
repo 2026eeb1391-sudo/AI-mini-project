@@ -49,13 +49,10 @@ print(data.isnull().sum())
 
 print("\nStatistical Summary:")
 print(data.describe())
-
 print("\nNumber of subdivisions:")
 print(data['SUBDIVISION'].nunique())
-
 print("\nCorrelation:")
 print(data[['YEAR', 'ANNUAL']].corr())
-
 plt.figure(figsize=(6, 4))
 sns.heatmap(
     data[['YEAR', 'ANNUAL']].corr(),
@@ -65,29 +62,22 @@ sns.heatmap(
 plt.title("Correlation Heatmap")
 plt.show()
 
-# 5. SELECT INPUT AND TARGET
 
+# 5. SELECT INPUT AND TARGET
 X = data[['SUBDIVISION', 'YEAR']]
 y = data['ANNUAL']
 
 
 # 6. TRAIN-TEST SPLIT (CHRONOLOGICAL)
-
 unique_years = sorted(data['YEAR'].unique())
-
 split_index = int(len(unique_years) * 0.80)
-
 split_year = unique_years[split_index - 1]
-
 train_data = data[data['YEAR'] <= split_year]
 test_data = data[data['YEAR'] > split_year]
-
 X_train = train_data[['SUBDIVISION', 'YEAR']]
 X_test = test_data[['SUBDIVISION', 'YEAR']]
-
 y_train = train_data['ANNUAL']
 y_test = test_data['ANNUAL']
-
 print("\nTraining samples:", len(X_train))
 print("Testing samples:", len(X_test))
 print("Last training year:", split_year)
