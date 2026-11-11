@@ -61,7 +61,7 @@ sns.heatmap(
 )
 plt.title("Correlation Heatmap")
 plt.show()
-print("correlation completed")
+
 
 
 # 5. SELECT INPUT AND TARGET
