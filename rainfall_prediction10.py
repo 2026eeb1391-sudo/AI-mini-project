@@ -262,10 +262,42 @@ plt.legend()
 plt.show()
 
 
+print("\n========== RAINFALL PREDICTION ==========")
+
+subdivisions = sorted(data['SUBDIVISION'].unique())
+
+print("\nAvailable subdivisions:")
+for s in subdivisions:
+    print(s)
+
+while True:
+
+    subdivision = input(
+        "\nEnter subdivision name: "
+    ).strip().upper()
+
+    if subdivision in subdivisions:
+        break
+
+    print("Invalid subdivision! Please enter an available name.")
+
+year = int(input("Enter year for prediction: "))
+
+# Create input DataFrame
+new_data = pd.DataFrame({
+    'SUBDIVISION': [subdivision],
+    'YEAR': [year]
+})
+
+# Predict rainfall
+predicted_rainfall = model.predict(new_data)
 
 
-
-
+print("RAINFALL PREDICTION RESULT")
+print("Subdivision:", subdivision)
+print("Year:", year)
+print("Predicted Annual Rainfall:",
+      round(predicted_rainfall[0], 2), "mm")
 
 
 
