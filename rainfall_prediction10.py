@@ -121,6 +121,9 @@ def test_model():
 
 train_model()
 
+# 12. MAKE PREDICTIONS ON TEST DATA
+
+y_pred = test_model()
 
 
 
