@@ -60,7 +60,9 @@ sns.heatmap(
     cmap='coolwarm'
 )
 plt.title("Correlation Heatmap")
-plt.show()
+plt.show(block=False)
+plt.pause(2)
+plt.close()
 
 
 # 5. SELECT INPUT AND TARGET
@@ -187,7 +189,9 @@ plt.xlabel("Actual Rainfall (mm)")
 plt.ylabel("Predicted Rainfall (mm)")
 plt.title("Training: Actual vs Predicted Rainfall")
 
-plt.show()
+plt.show(block=False)
+plt.pause(2)
+plt.close()
 
 # 17. GRAPH 2: TESTING DATA
 
@@ -212,7 +216,9 @@ plt.plot(
     'r--'
 )
 
-plt.show()
+plt.show(block=False)
+plt.pause(2)
+plt.close()
 
 
 
@@ -230,7 +236,9 @@ plt.xlabel("Predicted Rainfall (mm)")
 plt.ylabel("Residuals (mm)")
 plt.title("Residual Plot")
 
-plt.show()
+plt.show(block=False)
+plt.pause(2)
+plt.close()
 
 
 
@@ -259,7 +267,9 @@ plt.ylabel("Annual Rainfall (mm)")
 plt.title("Actual vs Predicted Rainfall Comparison")
 
 plt.legend()
-plt.show()
+plt.show(block=False)
+plt.pause(2)
+plt.close()
 
 
 print("\n========== RAINFALL PREDICTION ==========")
