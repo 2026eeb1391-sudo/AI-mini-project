@@ -440,13 +440,13 @@ Add screenshots of the actual model output and graphs after running the program.
 
 For example, if you save the images in an `outputs/` folder, you can display them using:
 
-```markdown
+
 ![Correlation Heatmap](outputs/correlation_heatmap.png)
 
 ![Testing: Actual vs Predicted](outputs/testing_graph.png)
 
 ![Residual Plot](outputs/residual_plot.png)
-```
+
 
 ---
 
