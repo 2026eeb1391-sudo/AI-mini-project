@@ -60,9 +60,8 @@ sns.heatmap(
     cmap='coolwarm'
 )
 plt.title("Correlation Heatmap")
-plt.show(block=False)
-plt.pause(2)
-plt.close()
+plt.show()
+print("correlation completed")
 
 
 # 5. SELECT INPUT AND TARGET
