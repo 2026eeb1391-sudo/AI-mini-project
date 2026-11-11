@@ -173,6 +173,26 @@ print("\nActual vs Predicted Rainfall:")
 print(results.head(15))
 
 
+# 16. GRAPH 1: TRAINING DATA
+
+plt.figure(figsize=(10, 5))
+
+plt.scatter(
+    y_train,
+    train_predictions,
+    alpha=0.5
+)
+
+plt.xlabel("Actual Rainfall (mm)")
+plt.ylabel("Predicted Rainfall (mm)")
+plt.title("Training: Actual vs Predicted Rainfall")
+
+plt.show()
+
+
+
+
+
 
 
 
