@@ -125,6 +125,34 @@ train_model()
 
 y_pred = test_model()
 
+# 13. EVALUATION METRICS
+
+def evaluate_model(actual, predicted):
+
+    mae = mean_absolute_error(actual, predicted)
+
+    mse = mean_squared_error(actual, predicted)
+
+    rmse = np.sqrt(mse)
+
+    r2 = r2_score(actual, predicted)
+
+    print("\n========== MODEL EVALUATION ==========")
+
+    print("Mean Absolute Error (MAE):", round(mae, 2))
+
+    print("Mean Squared Error (MSE):", round(mse, 2))
+
+    print("Root Mean Squared Error (RMSE):", round(rmse, 2))
+
+    print("R2 Score:", round(r2, 4))
+
+    print("Accuracy-like R2 percentage:", round(r2 * 100, 2), "%")
+
+
+evaluate_model(y_test, y_pred)
+
+
 
 
 
