@@ -17,9 +17,9 @@ A machine learning project that predicts annual rainfall for different subdivisi
 
 | Member | Entry Number | GitHub Handle | Role |
 |---|---|---|---|
-| Parul ||2026eeb1391|| 2026eeb1391-sudo| | Project development |
-| Parvesh kumar ||2026dab1300|| Parvesh-123|| Data preprocessing and EDA |
-| Tate Shivraj pramod ||2026aib1087|| shivraj-tate | |Model training and evaluation |
+| Parul | |2026eeb1391|| 2026eeb1391-sudo| | Project development |
+| Parvesh kumar | |2026dab1300|| Parvesh-123|| Data preprocessing and EDA |
+| Tate Shivraj pramod | |2026aib1087| | shivraj-tate | |Model training and evaluation |
 
 
 > Replace the placeholders above with the actual names, entry numbers, GitHub profiles, and agreed team roles.
