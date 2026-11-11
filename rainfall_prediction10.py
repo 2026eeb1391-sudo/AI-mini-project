@@ -234,6 +234,38 @@ plt.show()
 
 
 
+# 19. GRAPH 4: ACTUAL VS PREDICTED FOR SAMPLE TEST RECORDS
+
+comparison = results.head(30)
+
+plt.figure(figsize=(12, 5))
+
+plt.plot(
+    range(len(comparison)),
+    comparison['Actual Rainfall'],
+    marker='o',
+    label='Actual Rainfall'
+)
+
+plt.plot(
+    range(len(comparison)),
+    comparison['Predicted Rainfall'],
+    marker='o',
+    label='Predicted Rainfall'
+)
+
+plt.xlabel("Test Record")
+plt.ylabel("Annual Rainfall (mm)")
+plt.title("Actual vs Predicted Rainfall Comparison")
+
+plt.legend()
+plt.show()
+
+
+
+
+
+
 
 
 
