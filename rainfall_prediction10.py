@@ -160,6 +160,62 @@ print("\n TRAINING PERFORMANCE ")
 
 evaluate_model(y_train, train_predictions)
 
+# 15. ACTUAL VS PREDICTED VALUES
+
+results = pd.DataFrame({
+    'Subdivision': X_test['SUBDIVISION'].values,
+    'Year': X_test['YEAR'].values,
+    'Actual Rainfall': y_test.values,
+    'Predicted Rainfall': y_pred
+})
+
+print("\nActual vs Predicted Rainfall:")
+print(results.head(15))
+
+
+# 16. GRAPH 1: TRAINING DATA
+
+plt.figure(figsize=(10, 5))
+
+plt.scatter(
+    y_train,
+    train_predictions,
+    alpha=0.5
+)
+
+plt.xlabel("Actual Rainfall (mm)")
+plt.ylabel("Predicted Rainfall (mm)")
+plt.title("Training: Actual vs Predicted Rainfall")
+
+plt.show()
+
+
+# 17. GRAPH 2: TESTING DATA
+
+plt.figure(figsize=(10, 5))
+
+plt.scatter(
+    y_test,
+    y_pred,
+    alpha=0.5
+)
+
+plt.xlabel("Actual Rainfall (mm)")
+plt.ylabel("Predicted Rainfall (mm)")
+plt.title("Testing: Actual vs Predicted Rainfall")
+
+minimum = min(y_test.min(), y_pred.min())
+maximum = max(y_test.max(), y_pred.max())
+
+plt.plot(
+    [minimum, maximum],
+    [minimum, maximum],
+    'r--'
+)
+
+plt.show()
+
+
 
 
 
