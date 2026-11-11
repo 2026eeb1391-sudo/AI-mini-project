@@ -137,7 +137,7 @@ def evaluate_model(actual, predicted):
 
     r2 = r2_score(actual, predicted)
 
-    print("\n========== MODEL EVALUATION ==========")
+    print("\n MODEL EVALUATION ")
 
     print("Mean Absolute Error (MAE):", round(mae, 2))
 
@@ -151,6 +151,16 @@ def evaluate_model(actual, predicted):
 
 
 evaluate_model(y_test, y_pred)
+
+# 14. TRAINING PERFORMANCE
+
+train_predictions = model.predict(X_train)
+
+print("\n TRAINING PERFORMANCE ")
+
+evaluate_model(y_train, train_predictions)
+
+
 
 
 
