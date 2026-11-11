@@ -4,6 +4,7 @@ data = pd.read_csv("rainfall in india 1901-2015.csv")
 print(data.head)
 pip install pandas numpy matplotlib seaborn scikit-learn
 
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
