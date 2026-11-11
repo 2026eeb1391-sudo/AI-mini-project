@@ -266,9 +266,7 @@ plt.ylabel("Annual Rainfall (mm)")
 plt.title("Actual vs Predicted Rainfall Comparison")
 
 plt.legend()
-plt.show(block=False)
-plt.pause(2)
-plt.close()
+plt.show()
 
 
 print("\n========== RAINFALL PREDICTION ==========")
