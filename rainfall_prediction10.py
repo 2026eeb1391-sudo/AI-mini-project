@@ -216,6 +216,26 @@ plt.show()
 
 
 
+# 18. GRAPH 3: RESIDUAL PLOT
+
+residuals = y_test - y_pred
+
+plt.figure(figsize=(10, 5))
+
+plt.scatter(y_pred, residuals, alpha=0.5)
+
+plt.axhline(y=0, color='red', linestyle='--')
+
+plt.xlabel("Predicted Rainfall (mm)")
+plt.ylabel("Residuals (mm)")
+plt.title("Residual Plot")
+
+plt.show()
+
+
+
+
+
 
 
 
