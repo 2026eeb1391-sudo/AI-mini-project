@@ -189,30 +189,7 @@ plt.title("Training: Actual vs Predicted Rainfall")
 
 plt.show()
 
-# 17. GRAPH 2: TESTING DATA
 
-plt.figure(figsize=(10, 5))
-
-plt.scatter(
-    y_test,
-    y_pred,
-    alpha=0.5
-)
-
-plt.xlabel("Actual Rainfall (mm)")
-plt.ylabel("Predicted Rainfall (mm)")
-plt.title("Testing: Actual vs Predicted Rainfall")
-
-minimum = min(y_test.min(), y_pred.min())
-maximum = max(y_test.max(), y_pred.max())
-
-plt.plot(
-    [minimum, maximum],
-    [minimum, maximum],
-    'r--'
-)
-
-plt.show()
 
 
 
