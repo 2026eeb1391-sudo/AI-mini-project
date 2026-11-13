@@ -297,12 +297,5 @@ new_data = pd.DataFrame({
 })
 
 # predicting
-predicted_rainfall = model.predict(new_data)
 
-
-print("RAINFALL PREDICTION RESULT")
-print("Subdivision:", subdivision)
-print("Year:", year)
-print("Predicted Annual Rainfall:",
-      round(predicted_rainfall[0], 2), "mm")
 
