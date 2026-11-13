@@ -306,15 +306,3 @@ print("Year:", year)
 print("Predicted Annual Rainfall:",
       round(predicted_rainfall[0], 2), "mm")
 
-
-
-
-
-
-
-
-
-
-
-
-
