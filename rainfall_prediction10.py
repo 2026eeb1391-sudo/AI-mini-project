@@ -296,7 +296,7 @@ new_data = pd.DataFrame({
     'YEAR': [year]
 })
 
-# Predict rainfall
+# predicting
 predicted_rainfall = model.predict(new_data)
 
 
