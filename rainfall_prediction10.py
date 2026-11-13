@@ -268,7 +268,7 @@ plt.title("Actual vs Predicted Rainfall Comparison")
 plt.legend()
 plt.show()
 
-
+# 20. USER INPUT AND PREDICTION
 print("\n========== RAINFALL PREDICTION ==========")
 
 subdivisions = sorted(data['SUBDIVISION'].unique())
