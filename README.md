@@ -483,8 +483,8 @@ The model is evaluated using MAE, MSE, RMSE, and R² score. It also provides gra
 ## 16. Project Links
 
 - **GitHub Repository:** https://github.com/2026eeb1391-sudo/AI-mini-project
-- **Project Presentation:** Add PPT link
-- **Project Video:** Add video link
+- **Project Presentation:** 
+- **Project Video:** https://www.youtube.com/watch?v=9tMv4zk_koo
 
 ---
 
