@@ -483,7 +483,7 @@ The model is evaluated using MAE, MSE, RMSE, and R² score. It also provides gra
 ## 16. Project Links
 
 - **GitHub Repository:** https://github.com/2026eeb1391-sudo/AI-mini-project
-- **Project Presentation:** 
+- **Project Presentation:** https://github.com/2026eeb1391-sudo/AI-mini-project/blob/main/Rainfall-Prediction-Model%20pptx.pptx
 - **Project Video:** https://www.youtube.com/watch?v=9tMv4zk_koo
 
 ---
